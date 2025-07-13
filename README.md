@@ -7,33 +7,6 @@ An intelligent, voice-enabled assistant that allows users to upload documents (P
 
 ---
 
-## 🔧 GROQ API Test (via Postman)
-
-While this project does **not expose any custom REST APIs**, we use the **GROQ API** under the hood for summarization using LLaMA 3.
-
-To verify the GROQ integration separately, a sample Postman collection is included:
-
-📄 [`/postman/GROQ_API_Chat_Completion.postman_collection.json`](./postman/GROQ_API_Chat_Completion.postman_collection.json)
-
-> 🧪 This collection tests direct interaction with GROQ’s LLaMA 3 endpoint (`https://api.groq.com/openai/v1/chat/completions`).
->
-> 🔐 Requires a valid GROQ API key (`gsk_...`).
-
-
-
-## 🔑 GROQ API Key Setup
-
-This project uses **LLaMA 3 via the GROQ API** for summarization.  
-To use this feature, you'll need to provide your **GROQ API key**.
-
-### 🔧 How to Get and Use Your API Key
-
-1. Visit [https://console.groq.com/keys](https://console.groq.com/keys)
-2. Log in and create a new API key
-3. Copy the API key
-4. **Paste it directly into the Streamlit sidebar** or wherever prompted in the app
-
-
 ## 🚀 Features
 
 - 📄 **Document Upload** (PDF/TXT)
@@ -74,6 +47,32 @@ To use this feature, you'll need to provide your **GROQ API key**.
   - `openai` Python SDK (used with GROQ’s OpenAI-compatible endpoint)
 
 ---
+## 🔧 GROQ API Test (via Postman)
+
+While this project does **not expose any custom REST APIs**, we use the **GROQ API** under the hood for summarization using LLaMA 3.
+
+To verify the GROQ integration separately, a sample Postman collection is included:
+
+📄 [`/postman/GROQ_API_Chat_Completion.postman_collection.json`](./postman/GROQ_API_Chat_Completion.postman_collection.json)
+
+> 🧪 This collection tests direct interaction with GROQ’s LLaMA 3 endpoint (`https://api.groq.com/openai/v1/chat/completions`).
+>
+> 🔐 Requires a valid GROQ API key (`gsk_...`).
+
+
+
+## 🔑 GROQ API Key Setup
+
+This project uses **LLaMA 3 via the GROQ API** for summarization.  
+To use this feature, you'll need to provide your **GROQ API key**.
+
+### 🔧 How to Get and Use Your API Key
+
+1. Visit [https://console.groq.com/keys](https://console.groq.com/keys)
+2. Log in and create a new API key
+3. Copy the API key
+4. **Paste it directly into the Streamlit sidebar** or wherever prompted in the app
+
 
 ## ⚙️ Setup Instructions
 
