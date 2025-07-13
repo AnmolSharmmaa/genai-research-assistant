@@ -34,6 +34,43 @@ An intelligent, voice-enabled assistant that allows users to upload documents (P
 
 ---
 
+## ⚙️ Setup Instructions
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/genai-research-assistant.git
+cd genai-research-assistant
+```
+
+### 2. Create and Activate Virtual Environment
+
+```bash
+# Create virtual environment
+python -m venv venv
+
+# Activate on Windows
+venv\Scripts\activate
+
+# OR Activate on macOS/Linux
+source venv/bin/activate
+```
+
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run the Streamlit App
+
+```bash
+streamlit run app.py
+```
+
+> ✅ Ensure your microphone is working for voice features.
+> 📄 Place your background video/image inside the `static/` folder for visual enhancements.
+
 ## 🏗️ Architecture & Reasoning Flow
 
 ```text
@@ -41,3 +78,4 @@ User Uploads File ─┬─> Summarizer (BART) ─┬─> Summary Displayed
                    └─> QA Engine (DistilBERT) ─┬─> Ask Anything (text or voice)
                                               └─> Challenge Me ──> 3 Logic Qs ──> Evaluation
                                                            └─> Final Report (.docx)
+
