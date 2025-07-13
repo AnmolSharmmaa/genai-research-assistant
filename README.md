@@ -6,6 +6,9 @@ An intelligent, voice-enabled assistant that allows users to upload documents (P
 ![GenAI Research Assistant](https://cdn.prod.website-files.com/679038f47d3aba15a7876e30/682dfc3c5bce1e1a682f066b_How%20to%20Train%20GenAI%20to%20Work%20as%20Your%20Personal%20Research%20Assistant.jpg)
 
 ---
+## API Usage
+
+This project is built using Streamlit and does not expose REST APIs. Therefore, Postman testing is not applicable. All features are accessible directly through the interactive web interface.
 
 ## 🚀 Features
 
