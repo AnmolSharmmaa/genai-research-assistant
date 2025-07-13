@@ -29,7 +29,7 @@ To use this feature, you'll need to provide your **GROQ API key**.
 
 - 📄 **Document Upload** (PDF/TXT)
 - ✨ **Auto Summarization** using **GROQ API with LLaMA 3**
-- 💬 **Text + Voice-based Q&A** using a **DistilBERT-based model**
+- 💬 **Text + Voice-based Q&A** using a **GROQ API with LLaMA 3**
 - 🧠 **Challenge Me** Mode: logic-based quiz generated from document
 - 🎙️ Voice-to-text via `speech_recognition`
 - 🔊 Text-to-speech via `gTTS`
@@ -38,17 +38,31 @@ To use this feature, you'll need to provide your **GROQ API key**.
 
 ---
 
-## 🧰 Tech Stack
+# 🧰 Tech Stack
 
-- **Frontend**: Streamlit + Custom HTML/CSS (Glassmorphism, dark theme)
-- **NLP Models**:
-  - `LLaMA 3` via **GROQ API** (Summarization)
-  - `DistilBERT` (Q&A)
-- **Voice**:
-  - `speech_recognition` for voice input
-  - `gTTS` for voice output
-- **Backend**: Python, PyTorch, Transformers, docx
-- **Others**: pdfminer, whisper (optional), re, os
+- **Frontend**: 
+  - Streamlit
+  - Custom HTML/CSS (Glassmorphism, dark theme)
+
+- **LLM Backend (NLP)**:
+  - [LLaMA 3 (70B)](https://groq.com/) via **GROQ API** for:
+    - Summarization
+    - Chat-style Q&A
+
+- **Voice Interface**:
+  - `speech_recognition` – Convert voice to text
+  - `gTTS` – Convert text answers to audio
+
+- **Document Processing**:
+  - `python-docx` – Generate .docx reports
+  - `pypdf`, `pdfminer.six` – Extract text from PDF/TXT documents
+
+- **Other Libraries**:
+  - `langchain`, `langchain_community`, `sentence-transformers` – (Optional) for advanced RAG/embedding use cases
+  - `re`, `os`, `io` – Standard Python utilities
+
+- **API Management**:
+  - `openai` Python SDK (used with GROQ’s OpenAI-compatible endpoint)
 
 ---
 
@@ -92,9 +106,15 @@ streamlit run app.py
 ## 🏗️ Architecture & Reasoning Flow
 
 ```text
-User Uploads File ─┬─> Summarizer (LLaMA 3 via GROQ) ─┬─> Summary Displayed
-                   └─> QA Engine (DistilBERT) ─┬─> Ask Anything (Text/Voice)
-                                              └─> Challenge Me ──> 3 Logic Qs ──> Evaluation + Feedback
-                                                                     └─> Downloadable .docx Report
+User Uploads File 
+        │
+        ├──> Summarizer (LLaMA 3 via GROQ)
+        │         └──> Summary Displayed
+        │
+        └──> Q&A Engine (LLaMA 3 via GROQ)
+                  ├──> Ask Anything (Text / Voice)
+                  └──> Challenge Me ──> 3 Logic Qs ──> Evaluation + Feedback
+                                                    └──> Downloadable .docx Report
+
 
 
