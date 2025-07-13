@@ -6,11 +6,20 @@ An intelligent, voice-enabled assistant that allows users to upload documents (P
 ![GenAI Research Assistant](https://cdn.prod.website-files.com/679038f47d3aba15a7876e30/682dfc3c5bce1e1a682f066b_How%20to%20Train%20GenAI%20to%20Work%20as%20Your%20Personal%20Research%20Assistant.jpg)
 
 ---
-## API Usage
 
-This project internally uses the **GROQ API** to perform document summarization via **LLaMA 3**. However, it does **not expose any custom REST APIs** itself. All features are accessed directly through the interactive Streamlit web interface.
+## 🔧 GROQ API Test (via Postman)
 
-> ℹ️ Postman testing is not applicable, as this app is client-driven and does not offer public endpoints
+While this project does **not expose any custom REST APIs**, we use the **GROQ API** under the hood for summarization using LLaMA 3.
+
+To verify the GROQ integration separately, a sample Postman collection is included:
+
+📄 [`/postman/GROQ_API_Chat_Completion.postman_collection.json`](./postman/GROQ_API_Chat_Completion.postman_collection.json)
+
+> 🧪 This collection tests direct interaction with GROQ’s LLaMA 3 endpoint (`https://api.groq.com/openai/v1/chat/completions`).
+>
+> 🔐 Requires a valid GROQ API key (`gsk_...`).
+
+
 
 ## 🔑 GROQ API Key Setup
 
