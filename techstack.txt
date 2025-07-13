@@ -7,7 +7,7 @@ GenAI Research Assistant - Tech Stack
 🧠 NLP & AI:
 - GROQ API (LLaMA 3 for Summarization and Q&A)
 - LangChain
-- Sentence Transformers
+- Sentence Transformers (Optional – for future embedding/vector similarity)
 - FAISS (Vector Search - Optional)
 - Huggingface Hub
 
