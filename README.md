@@ -12,6 +12,19 @@ This project internally uses the **GROQ API** to perform document summarization 
 
 > ℹ️ Postman testing is not applicable, as this app is client-driven and does not offer public endpoints
 
+## 🔑 GROQ API Key Setup
+
+This project uses **LLaMA 3 via the GROQ API** for summarization.  
+To use this feature, you'll need to provide your **GROQ API key**.
+
+### 🔧 How to Get and Use Your API Key
+
+1. Visit [https://console.groq.com/keys](https://console.groq.com/keys)
+2. Log in and create a new API key
+3. Copy the API key
+4. **Paste it directly into the .streamlit folder** 
+
+
 ## 🚀 Features
 
 - 📄 **Document Upload** (PDF/TXT)
