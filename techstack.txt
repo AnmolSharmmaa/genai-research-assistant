@@ -1,0 +1,42 @@
+GenAI Research Assistant - Tech Stack
+
+🖥️ Frontend:
+- Streamlit
+- HTML5 + CSS (Glassmorphism UI)
+
+🧠 NLP & AI:
+- HuggingFace Transformers
+  - BART (Summarization)
+  - DistilBERT (Question Answering)
+- LangChain
+- Sentence Transformers
+- FAISS (Vector Search)
+- cTransformers
+- Huggingface Hub
+
+🎙️ Voice Integration:
+- speechrecognition (Voice Input)
+- gTTS (Voice Output)
+- pyttsx3 (Optional TTS)
+- whisper (Optional STT)
+
+📄 File Handling:
+- pypdf
+- pdfminer.six
+- python-docx (Generate downloadable reports)
+
+⚙️ Backend/Utilities:
+- Python 3.8+
+- torch
+- accelerate
+- bitsandbytes
+- os, re, io
+
+🌐 Dev/Infra:
+- chainlit (Chat interface if used)
+- langchain_community (Tool integrations)
+- streamlit (Web App Framework)
+
+📝 Documentation & Testing:
+- Postman (API Testing + Dump)
+- GitHub (Version control + collaboration)
