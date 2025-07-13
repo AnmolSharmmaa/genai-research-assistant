@@ -22,7 +22,7 @@ To use this feature, you'll need to provide your **GROQ API key**.
 1. Visit [https://console.groq.com/keys](https://console.groq.com/keys)
 2. Log in and create a new API key
 3. Copy the API key
-4. **Paste it directly into the .streamlit folder** 
+4. **Paste it directly into the secrets.toml under .streamlit folder** 
 
 
 ## 🚀 Features
