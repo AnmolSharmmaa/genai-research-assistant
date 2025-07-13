@@ -5,8 +5,8 @@ GenAI Research Assistant - Tech Stack
 - HTML5 + CSS (Glassmorphism UI)
 
 🧠 NLP & AI:
+- GROQ API (LLaMA 3 for Summarization)
 - HuggingFace Transformers
-  - BART (Summarization)
   - DistilBERT (Question Answering)
 - LangChain
 - Sentence Transformers
@@ -38,5 +38,5 @@ GenAI Research Assistant - Tech Stack
 - streamlit (Web App Framework)
 
 📝 Documentation & Testing:
-- Postman (API Testing + Dump)
+- Postman (For API dump and reference)
 - GitHub (Version control + collaboration)
