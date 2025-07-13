@@ -5,20 +5,17 @@ GenAI Research Assistant - Tech Stack
 - HTML5 + CSS (Glassmorphism UI)
 
 🧠 NLP & AI:
-- GROQ API (LLaMA 3 for Summarization)
-- HuggingFace Transformers
-  - DistilBERT (Question Answering)
+- GROQ API (LLaMA 3 for Summarization and Q&A)
 - LangChain
 - Sentence Transformers
-- FAISS (Vector Search)
-- cTransformers
+- FAISS (Vector Search - Optional)
 - Huggingface Hub
 
 🎙️ Voice Integration:
 - speechrecognition (Voice Input)
 - gTTS (Voice Output)
 - pyttsx3 (Optional TTS)
-- whisper (Optional STT)
+- whisper (Optional STT - not actively used)
 
 📄 File Handling:
 - pypdf
@@ -27,16 +24,13 @@ GenAI Research Assistant - Tech Stack
 
 ⚙️ Backend/Utilities:
 - Python 3.8+
-- torch
-- accelerate
-- bitsandbytes
-- os, re, io
+- os, re, io, tempfile
 
 🌐 Dev/Infra:
-- chainlit (Chat interface if used)
+- chainlit (Optional Chat Interface)
 - langchain_community (Tool integrations)
 - streamlit (Web App Framework)
 
 📝 Documentation & Testing:
-- Postman (For API dump and reference)
+- Postman (For API testing)
 - GitHub (Version control + collaboration)
