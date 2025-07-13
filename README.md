@@ -1,1 +1,1 @@
-# genai-research-assistant
+# Genai-research-assistant
